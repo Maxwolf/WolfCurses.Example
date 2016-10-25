@@ -1,7 +1,8 @@
 {
   "title": "WolfCurses.Example",
   "copyright": "Maxwolf",
-  "description": "WolfCurses.Example",
+  "description": "Example implementation of WolfCurses library. Contains three different form and window types.",
+  "language": "en-US",
   "version": "1.0.0-*",
   "buildOptions": {
     "emitEntryPoint": true,
