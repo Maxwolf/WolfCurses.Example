@@ -1,0 +1,32 @@
+{
+  "title": "WolfCurses.Example",
+  "copyright": "Maxwolf",
+  "description": "WolfCurses.Example",
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "optimize": true,
+    "xmlDoc": true,
+    "portable": true
+  },
+
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "type": "default",
+      "version": "1.0.1"
+    },
+    "WolfCurses": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  },
+
+  "runtimes": {
+    "win7-x64": {},
+    "osx.10.10-x64": {},
+    "ubuntu.14.04-x64": {}
+  }
+}
