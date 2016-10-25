@@ -5,12 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WolfCurses", "..\WolfCurses\WolfCurses.xproj", "{A4D1FB97-0E85-4AE1-896E-BACD02F9EC45}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WolfCurses.Example", "src\WolfCurses.Example.xproj", "{EA01B629-4EF5-4C19-980E-96126A4D2726}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDE7C583-46F9-48E6-8EAC-495D2B3019CA}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WolfCurses.Example", "WolfCurses.Example.xproj", "{EA01B629-4EF5-4C19-980E-96126A4D2726}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
