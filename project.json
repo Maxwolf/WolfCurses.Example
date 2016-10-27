@@ -16,7 +16,8 @@
     "Microsoft.NETCore.App": {
       "type": "default",
       "version": "1.0.1"
-    }
+    },
+    "WolfCurses": "2.1.0.11"
   },
 
   "frameworks": {
