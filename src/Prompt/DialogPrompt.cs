@@ -40,7 +40,7 @@ namespace WolfCurses.Example.Prompt
             dialogPrompt.Clear();
 
             dialogPrompt.AppendLine($"{Environment.NewLine}Dialog Prompt Example{Environment.NewLine}");
-            dialogPrompt.Append("This is some very important information the user should know about!");
+            dialogPrompt.AppendLine("This is some very important information the user should know about!");
 
             return dialogPrompt.ToString();
         }
