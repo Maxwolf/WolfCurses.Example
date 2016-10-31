@@ -38,9 +38,13 @@ namespace WolfCurses.Example.CustomInput
         /// </returns>
         public override string OnRenderForm()
         {
+            ParentWindow.PromptText = string.Empty;
+
             _inputNamesHelp.Clear();
+
             _inputNamesHelp.AppendLine($"{Environment.NewLine}Dialog Custom Input{Environment.NewLine}");
             _inputNamesHelp.Append("What is your name?");
+
             return _inputNamesHelp.ToString();
         }
 

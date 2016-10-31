@@ -3,6 +3,7 @@
 
 using System;
 using System.Text;
+using WolfCurses.Core;
 using WolfCurses.Window;
 using WolfCurses.Window.Form;
 using WolfCurses.Window.Form.Input;
@@ -46,6 +47,8 @@ namespace WolfCurses.Example.Question
         /// </returns>
         protected override string OnDialogPrompt()
         {
+            ParentWindow.PromptText = SceneGraph.PROMPT_TEXT_DEFAULT;
+
             dialogYesNo.Clear();
 
             dialogYesNo.AppendLine($"{Environment.NewLine}Question Dialog Example{Environment.NewLine}");
