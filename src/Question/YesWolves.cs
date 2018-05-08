@@ -16,6 +16,7 @@ namespace WolfCurses.Example.Question
         ///     This constructor will be used by the other one
         /// </summary>
         /// <param name="window">The window.</param>
+        // ReSharper disable once UnusedMember.Global
         public YesWolves(IWindow window) : base(window)
         {
         }

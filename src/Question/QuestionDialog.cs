@@ -19,13 +19,14 @@ namespace WolfCurses.Example.Question
         /// <summary>
         ///     Holds all the text so we only need to render it once.
         /// </summary>
-        private StringBuilder dialogYesNo = new StringBuilder();
+        private readonly StringBuilder _dialogYesNo = new StringBuilder();
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="InputForm{T}" /> class.
         ///     This constructor will be used by the other one
         /// </summary>
         /// <param name="window">The window.</param>
+        // ReSharper disable once UnusedMember.Global
         public QuestionDialog(IWindow window) : base(window)
         {
         }
@@ -34,10 +35,7 @@ namespace WolfCurses.Example.Question
         ///     Defines what type of dialog this will act like depending on this enumeration value. Up to implementation to define
         ///     desired behavior.
         /// </summary>
-        protected override DialogType DialogType
-        {
-            get { return DialogType.YesNo; }
-        }
+        protected override DialogType DialogType => DialogType.YesNo;
 
         /// <summary>
         ///     Fired when dialog prompt is attached to active game Windows and would like to have a string returned.
@@ -49,12 +47,12 @@ namespace WolfCurses.Example.Question
         {
             ParentWindow.PromptText = SceneGraph.PROMPT_TEXT_DEFAULT;
 
-            dialogYesNo.Clear();
+            _dialogYesNo.Clear();
 
-            dialogYesNo.AppendLine($"{Environment.NewLine}Question Dialog Example{Environment.NewLine}");
-            dialogYesNo.Append("Do you like wolves? Y/N");
+            _dialogYesNo.AppendLine($"{Environment.NewLine}Question Dialog Example{Environment.NewLine}");
+            _dialogYesNo.Append("Do you like wolves? Y/N");
 
-            return dialogYesNo.ToString();
+            return _dialogYesNo.ToString();
         }
 
         /// <summary>

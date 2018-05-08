@@ -17,13 +17,14 @@ namespace WolfCurses.Example.CustomInput
         /// <summary>
         ///     Makes it easy to print and manage multiple lines of text.
         /// </summary>
-        private StringBuilder _inputNamesHelp;
+        private readonly StringBuilder _inputNamesHelp;
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="Form{TData}" /> class.
         ///     This constructor will be used by the other one
         /// </summary>
         /// <param name="window">The window.</param>
+        // ReSharper disable once UnusedMember.Global
         public DialogCustomInput(IWindow window) : base(window)
         {
             _inputNamesHelp = new StringBuilder();

@@ -18,10 +18,7 @@ namespace WolfCurses.Example
         /// <summary>
         ///     Example data this module provides for us.
         /// </summary>
-        public string ExampleModuleData
-        {
-            get { return $"Random: {_randomData.ToString("N0")}"; }
-        }
+        public string ExampleModuleData => $"Random: {_randomData:N0}";
 
         /// <summary>
         ///     Called when the simulation is ticked by underlying operating system, game engine, or potato. Each of these system

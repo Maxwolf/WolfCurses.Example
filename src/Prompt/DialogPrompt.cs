@@ -18,13 +18,14 @@ namespace WolfCurses.Example.Prompt
         /// <summary>
         ///     Holds all the text so we only need to render it once.
         /// </summary>
-        private StringBuilder dialogPrompt = new StringBuilder();
+        private readonly StringBuilder _dialogPrompt = new StringBuilder();
 
         /// <summary>
         ///     Initializes a new instance of the <see cref="InputForm{T}" /> class.
         ///     This constructor will be used by the other one
         /// </summary>
         /// <param name="window">The window.</param>
+        // ReSharper disable once UnusedMember.Global
         public DialogPrompt(IWindow window) : base(window)
         {
         }
@@ -37,12 +38,12 @@ namespace WolfCurses.Example.Prompt
         /// </returns>
         protected override string OnDialogPrompt()
         {
-            dialogPrompt.Clear();
+            _dialogPrompt.Clear();
 
-            dialogPrompt.AppendLine($"{Environment.NewLine}Dialog Prompt Example{Environment.NewLine}");
-            dialogPrompt.AppendLine("This is some very important information the user should know about!");
+            _dialogPrompt.AppendLine($"{Environment.NewLine}Dialog Prompt Example{Environment.NewLine}");
+            _dialogPrompt.AppendLine("This is some very important information the user should know about!");
 
-            return dialogPrompt.ToString();
+            return _dialogPrompt.ToString();
         }
 
         /// <summary>

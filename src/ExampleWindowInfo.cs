@@ -20,9 +20,6 @@ namespace WolfCurses.Example
         ///     Shows example of using the user data class to generate a piece of data that can be shown on the main interface and
         ///     accessed from form or window.
         /// </summary>
-        public string ExampleUserData
-        {
-            get { return $"Time: {DateTime.Now}"; }
-        }
+        public string ExampleUserData => $"Time: {DateTime.Now}";
     }
 }

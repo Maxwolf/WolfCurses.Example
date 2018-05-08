@@ -14,7 +14,7 @@ namespace WolfCurses.Example
         /// <summary>
         ///     Main entry point for the application being startup.
         /// </summary>
-        private static void Main(string[] args)
+        private static void Main()
         {
             // Create console with title, no cursor, make CTRL-C act as input.
             Console.Title = "WolfCurses Console Application";
